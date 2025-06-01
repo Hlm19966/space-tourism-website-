@@ -118,6 +118,10 @@ body {
     padding: 20px 0 40px 0;
 }
 
+.star-logo {
+    width: 40px;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -197,7 +201,7 @@ h1 {
 p {
     color: hsl(var(--light-color));
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     font-family: var(--ff-sans-normal);
     line-height: 2;
 }
