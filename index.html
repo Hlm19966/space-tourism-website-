@@ -3,23 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Space tourism website</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<h1>hello world</h1>
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
+  <div class="container">
+    <header>
+    <div class="navigation flex">
+      <div class="left-sidebar">
+        <img src="assets/shared/logo.svg" alt="star logo" class="logo"/>
+      </div>
+      <div class="right-sidebar">
+        <img src="assets/shared/icon-hamburger.svg" alt="icon hamburger" class="icon-hamburger"/>
+      </div>
+    <div class="mobile-menu">
+      <nav>
+        <ul>
+          <li class="active"><a href="#" title="Home" ><span class="number">00</span>Home</a></li>
+          <li><a href="#" title="Destination"><span class="number">01</span>Destination</a></li>
+          <li><a href="#" title="Crew"><span class="number">02</span>Crew</a></li>
+          <li><a href="#" title="Technology"><span class="number">03</span>Technology</a></li> 
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </header>
+  <main>
+    <h1>So, you want to travel to <div class="space">Space</div></h1>
+    <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
   outer space and not hover kind of on the edge of it. Well sit back, and relax 
   because we’ll give you a truly out of this world experience!
-
-  Explore
-
+    </p>
+    <a href="#" class="explore-btn">Explore</a>
+  </div>
+</main>
 </body>
 </html>

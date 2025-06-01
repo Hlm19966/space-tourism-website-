@@ -3,19 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --dark-color: hsl(230 35% 7%);
-    --light-color: hsl(231 77% 90%);
-    --white-color: hsl(0 0% 100%);
+    --dark-color: 230 35% 7%;
+    --light-color: 231 77% 90%;
+    --white-color: 0 0% 100%;
     
-    /*font-sizes*/
-    --fs-200: 0.875rem;
-    --fs-300: 1rem;
-    --fs-400: 1.125rem;
-    --fs-500: 1.75rem;
-    --fs-600: 2rem;
-    --fs-700: 3.5rem;
-    --fs-800: 6.25rem;
-    --fs-900: 9.375rem;
 
     /*font-family*/
     --ff-serif: "bellefair", serif;
@@ -51,9 +42,6 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
-p {
-    text-wrap: pretty;
-}
 
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
@@ -87,12 +75,6 @@ p {
 }
 
 
-.container {
-    max-width: 80rem;
-    margin-inline: auto;
-    padding-inline: 2em;
-}
-
 
 .sr-only {
     position: absolute;
@@ -107,3 +89,162 @@ p {
 }
 
 
+/*Body container*/
+body {
+    font-family: var(--ff-sans-normal);
+    color: hsl(var(--white-color));
+    min-height: 100vh;
+    font-size: 1rem;
+    background-image: url(./assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    max-width: 23.438rem;
+    text-align: center;
+    margin-inline: auto;
+    padding-inline: 2em;
+}
+
+
+/*navigation*/
+
+.navigation {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0 40px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+   border-bottom: .2rem solid hsl(var(--white-color) / 0);
+   padding: 1rem 0;
+   cursor: pointer;
+}
+
+ul li:hover,
+ul li:focus {
+   border-color: hsl(var(--white-color) / .4);
+}
+
+ul li.active {
+    border-color: hsl(var(--white-color) / 1);
+}
+
+
+li a {
+    text-decoration: none;
+    color: var(--white-color);
+    font: 400 var(--fs-400) var(--ff-sans-cond);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+}
+
+.number {
+    color: var(--white-color);
+    font-weight: 600;
+    letter-spacing: 2.7px; 
+    margin-right: 8px;
+}
+
+
+.mobile-menu {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header*/
+
+h1 {
+   color: hsl(var(--light-color));
+   font-family: var(--ff-sans-cond);
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   font-size: 1.063rem;
+}
+
+.space {
+   color: hsl(var(--white-color));
+   font-family:  var(--ff-serif);
+   font-weight: 400;
+   font-size: 5rem;
+   text-transform: uppercase;
+}
+
+
+p {
+    color: hsl(var(--light-color));
+    font-weight: 400;
+    font-size: 0.875rem;
+    font-family: var(--ff-sans-normal);
+    line-height: 2;
+}
+
+
+.explore-btn {
+    display: grid;
+    width: 9rem;
+    height: 9rem;
+    position: relative;
+    place-items: center;
+    margin-inline: auto;
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-family: var(--ff-serif);
+    color: hsl(var(--dark-color));
+    background-color: hsl(var(--white-color));
+    text-decoration: none;
+    z-index: 1;
+    margin-top: 4rem;
+}
+
+.explore-btn::after {
+    content: "";
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: hsl(var(--white-color) / .10);
+    opacity: 0;
+    transition: transform 500ms ease-in-out, opacity 500ms linear;
+}
+
+.explore-btn:hover::after,
+.explore-btn:focus::after {
+   transform: scale(1.5);
+   opacity: 1;
+}
+
+
+
+
+
+@media (min-width: 45rem) {
+
+
+
+
+}
