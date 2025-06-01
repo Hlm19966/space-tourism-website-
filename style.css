@@ -89,7 +89,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*Body container*/
+/*Body & container*/
 body {
     font-family: var(--ff-sans-normal);
     color: hsl(var(--white-color));
@@ -105,7 +105,6 @@ body {
     max-width: 23.438rem;
     text-align: center;
     margin-inline: auto;
-    padding-inline: 1.1rem;
 }
 
 
@@ -118,8 +117,13 @@ body {
     padding: 20px 0 55px 0;
 }
 
-.star-logo {
-    width: 40px;
+.logo {
+    max-height: 40px;
+}
+
+.right-sidebar button {
+    border: none;
+    background: none;
 }
 
 ul {
@@ -178,23 +182,30 @@ li a {
 
 
 
-/*header*/
+/*main*/
+
+main {
+    padding-inline: 1.1rem;
+}
+
 
 h1 {
    color: hsl(var(--light-color));
    font-family: var(--ff-sans-cond);
    text-transform: uppercase;
    letter-spacing: 4px;
-   font-size: 1.063rem;
+   font-size: 15px;
    font-weight: 400;
 }
 
 .space {
+   display: block;
    color: hsl(var(--white-color));
    font-family:  var(--ff-serif);
    font-weight: 400;
-   font-size: 5rem;
+   font-size: 5.5rem;
    text-transform: uppercase;
+   margin-top: 10px;
 }
 
 
@@ -244,7 +255,7 @@ p {
    opacity: 1;
 }
 
-
+/*main*/
 
 
 
