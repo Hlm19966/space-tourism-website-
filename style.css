@@ -105,7 +105,7 @@ body {
     max-width: 23.438rem;
     text-align: center;
     margin-inline: auto;
-    padding-inline: 2em;
+    padding-inline: 1.1rem;
 }
 
 
@@ -182,6 +182,7 @@ h1 {
    text-transform: uppercase;
    letter-spacing: 4px;
    font-size: 1.063rem;
+   font-weight: 400;
 }
 
 .space {
@@ -196,7 +197,7 @@ h1 {
 p {
     color: hsl(var(--light-color));
     font-weight: 400;
-    font-size: 0.875rem;
+    font-size: 14px;
     font-family: var(--ff-sans-normal);
     line-height: 2;
 }
