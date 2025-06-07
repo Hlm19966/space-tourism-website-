@@ -14,11 +14,14 @@
         <img src="assets/shared/logo.svg" alt="star logo" class="logo"/>
       </div>
       <div class="right-sidebar">
-        <button>
-          <img src="assets/shared/icon-hamburger.svg" alt="icon hamburger" class="icon-hamburger"/>
+        <button aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Menu</span>
+          <img src="assets/shared/icon-hamburger.svg" alt="icon hamburger" class="icon-hamburger" >
         </button>
       </div>
-    <div class="mobile-menu" role="dialog" aria-live="polite">
+    <div class="mobile-menu" role="dialog" aria-live="polite" id="mobileMenu">
+      <div class="mobile-menu-inner">
+      <img src="assets/shared/icon-close.svg" alt="Close icon" class="close-icon" aria-label="Close Menu" />
       <nav>
         <ul>
           <li class="active"><a href="#" title="Home" ><span class="number">00</span>Home</a></li>
@@ -29,15 +32,21 @@
       </nav>
     </div>
   </div>
+  </div>
   </header>
   <main>
+    <div class="left-side">
     <h1>So, you want to travel to <span class="space">Space</span></h1>
     <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
   outer space and not hover kind of on the edge of it. Well sit back, and relax 
   because we’ll give you a truly out of this world experience!
     </p>
+    </div>
+    <div class="right-side">
     <a href="#" class="explore-btn" aria-label="Explore the universe">Explore</a>
   </div>
+  </div>
 </main>
+<script src="main.js"></script>
 </body>
 </html>

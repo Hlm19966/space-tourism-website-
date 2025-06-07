@@ -124,6 +124,11 @@ body {
 .right-sidebar button {
     border: none;
     background: none;
+    cursor: pointer;
+}
+
+nav {
+    width: 100%;
 }
 
 ul {
@@ -133,9 +138,10 @@ ul {
 }
 
 ul li {
-   border-bottom: .2rem solid hsl(var(--white-color) / 0);
-   padding: 1rem 0;
+   border-right: 5px solid hsl(var(--white-color) / 0);
+   padding: 0.1rem 0;
    cursor: pointer;
+   margin: 2rem 0;
 }
 
 ul li:hover,
@@ -164,22 +170,45 @@ li a {
     margin-right: 8px;
 }
 
-
-.mobile-menu {
-    display: none;
+.close-icon {
+    cursor: pointer;
 }
 
 
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 18rem;
+    height: 100%;
+    transition: right 0.3s ease;
+    background-color: hsl(var(--white-color) / 0.02);
+    backdrop-filter: blur(1.5rem);
+    z-index: 999;
+}
 
 
+.mobile-menu.active {
+    right: 0;
+    transition: right 0.3s ease;
+}
 
 
+.mobile-menu-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 2rem 0 2rem 2rem;
+}
 
-
-
-
-
-
+.close-icon {
+    margin-left: auto;
+    margin-bottom: 4rem;
+    padding: 0 2rem 0 1rem;
+    width: 4.5rem;
+}
 
 
 /*main*/
@@ -194,7 +223,7 @@ h1 {
    font-family: var(--ff-sans-cond);
    text-transform: uppercase;
    letter-spacing: 4px;
-   font-size: 15px;
+   font-size: 0.938rem;
    font-weight: 400;
 }
 
@@ -203,7 +232,7 @@ h1 {
    color: hsl(var(--white-color));
    font-family:  var(--ff-serif);
    font-weight: 400;
-   font-size: 5.5rem;
+   font-size: 5.1rem;
    text-transform: uppercase;
    margin-top: 10px;
 }
@@ -212,7 +241,7 @@ h1 {
 p {
     color: hsl(var(--light-color));
     font-weight: 400;
-    font-size: 16px;
+    font-size: 0.938rem;
     font-family: var(--ff-sans-normal);
     line-height: 2;
     margin-top: 10px;
@@ -253,15 +282,82 @@ p {
 .explore-btn:focus::after {
    transform: scale(1.5);
    opacity: 1;
+   color: hsl(var(--white-color) / .5);
 }
 
 /*main*/
 
 
 
-@media (min-width: 45rem) {
+
+@media only screen and (min-width: 80rem) {
+
+    body {
+        background-image: url(assets/home/background-home-desktop.jpg);
+    }
+
+    .container {
+        max-width: 80rem;
+        display: grid;
+        text-align: left;
+       
+    }
+
+    ul li {
+        border-bottom: .2rem solid hsl(var(--white-color) / 0);
+        border-right: none;
+        padding: 1rem 0;
+    } 
+    
+    .mobile-menu {
+        position: static;
+        background: none;
+        width: auto;
+    }
+
+    .right-sidebar button {
+        display: none;
+    }
+
+    .close-icon {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
 
 
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-content: end;
+        height: 67vh;
+    }
 
+    h1 {
+        font-size: 1.813rem;
+    }
 
+    .space {
+        font-size: 9rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        padding-right: 0.938rem;
+    }
+
+    .explore-btn {
+        height: 15rem;
+        width: 15rem;
+        font-size: 1.8rem
+    }
 }
+
+
+
+
+
