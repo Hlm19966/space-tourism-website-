@@ -157,17 +157,18 @@ ul li.active {
 li a {
     text-decoration: none;
     color: var(--white-color);
-    font: 400 var(--fs-400) var(--ff-sans-cond);
+    font-weight: 400;
+    font-family: var(--ff-sans-cond);
     letter-spacing: 2px;
     text-transform: uppercase;
-    
+    font-size: 1.125rem;
 }
 
 .number {
     color: var(--white-color);
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 2.7px; 
-    margin-right: 8px;
+    margin-right: 0.625rem;
 }
 
 .close-icon {
@@ -181,7 +182,7 @@ li a {
     right: -100%;
     width: 18rem;
     height: 100%;
-    transition: right 0.3s ease;
+    transition: right 0.3s ease-in-out;
     background-color: hsl(var(--white-color) / 0.02);
     backdrop-filter: blur(1.5rem);
     z-index: 999;
@@ -208,6 +209,7 @@ li a {
     margin-bottom: 4rem;
     padding: 0 2rem 0 1rem;
     width: 4.5rem;
+    transition: transform 500ms ease-in-out;
 }
 
 
@@ -301,18 +303,34 @@ p {
         display: grid;
         text-align: left;
        
+    } 
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
     }
+
 
     ul li {
         border-bottom: .2rem solid hsl(var(--white-color) / 0);
         border-right: none;
-        padding: 1rem 0;
+        padding: 2rem 0;
+        margin: 0;
     } 
+
+    li a {
+        font-size: 1.25rem;
+    }
     
     .mobile-menu {
         position: static;
         background: none;
         width: auto;
+    }
+
+    .mobile-menu-inner {
+        padding: 0  1rem;
     }
 
     .right-sidebar button {
@@ -323,11 +341,8 @@ p {
         display: none;
     }
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-    }
+   
+
 
 
     main {
@@ -361,3 +376,8 @@ p {
 
 
 
+@media (min-width: 35rem) and (max-width: 45rem) {
+    container {
+        width: min(90%, 43rem);
+    }
+}
