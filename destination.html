@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space tourism website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="whole-body destination">
+  <div class="container">
+    <a class="skip-to-content"  href="#main">Skip to content</a>
+    <header>
+    <div class="navigation flex">
+      <div class="left-sidebar">
+        <img src="assets/shared/logo.svg" alt="star logo" class="logo"/>
+      </div>
+      <hr class="divider-line sr-only" aria-hidden="true" />
+      <div class="right-sidebar">
+        <button aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Menu</span>
+          <img src="assets/shared/icon-hamburger.svg" alt="icon hamburger" class="icon-hamburger" >
+        </button>
+      </div>
+    <div class="mobile-menu" role="dialog" aria-live="polite" id="mobileMenu">
+      <div class="mobile-menu-inner">
+      <img src="assets/shared/icon-close.svg" alt="Close icon" class="close-icon" aria-label="Close Menu" />
+      <nav>
+        <ul>
+          <li><a href="index.html" title="Home" ><span class="number" aria-hidden="true">00</span>Home</a></li>
+          <li class="active"><a href="destination.html" title="Destination"><span class="number" aria-hidden="true">01</span>Destination</a></li>
+          <li><a href="#" title="Crew"><span class="number" aria-hidden="true">02</span>Crew</a></li>
+          <li><a href="#" title="Technology"><span class="number" aria-hidden="true">03</span>Technology</a></li> 
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </div>
+  </header>
+  <main id="main">
+    <h1 class="first-paragraph-dest"><span class="number-title" aria-hidden="true">01</span> pick your destination</h1>
+    <img src="assets/destination/image-moon.png" alt="the moon" class="planet-image" />
+    <div class="tab-list">
+      <button aria-selected="true" class="tab-list-btn">Moon</button>
+      <button aria-selected="true" class="tab-list-btn">Mars</button>
+      <button aria-selected="true" class="tab-list-btn">Europa</button>
+      <button aria-selected="true" class="tab-list-btn">Titan</button>
+    </div>
+    <article>
+      <h2>Moon</h2>
+      <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+        regain perspective and come back refreshed. While you’re there, take in some history
+         by visiting the Luna 2 and Apollo 11 landing sites.</p>
+         <hr aria-hidden="true"/>
+        <div>
+         <h3>Avg. distance</h3>
+         <p class="distance">384,400 km</p>
+        </div>
+        <div>
+         <h3>Est. travel time</h3>
+         <p class="distance">3 days</p>
+        </div>
+    </article>
+    </div>
+    <script src="main.js"></script>
+    </body>
+    </html>
+  

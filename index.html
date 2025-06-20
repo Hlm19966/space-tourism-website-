@@ -6,14 +6,15 @@
   <title>Space tourism website</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="home whole-body">
   <div class="container">
+    <a class="skip-to-content"  href="#main">Skip to content</a>
     <header>
     <div class="navigation flex">
       <div class="left-sidebar">
         <img src="assets/shared/logo.svg" alt="star logo" class="logo"/>
       </div>
-      <hr />
+      <hr class="divider-line" aria-hidden="true" />
       <div class="right-sidebar">
         <button aria-expanded="false" aria-controls="mobile-menu">
           <span class="sr-only">Menu</span>
@@ -25,17 +26,17 @@
       <img src="assets/shared/icon-close.svg" alt="Close icon" class="close-icon" aria-label="Close Menu" />
       <nav>
         <ul>
-          <li class="active"><a href="#" title="Home" ><span class="number">00</span>Home</a></li>
-          <li><a href="#" title="Destination"><span class="number">01</span>Destination</a></li>
-          <li><a href="#" title="Crew"><span class="number">02</span>Crew</a></li>
-          <li><a href="#" title="Technology"><span class="number">03</span>Technology</a></li> 
+          <li class="active"><a href="index.htmltitle="Home" ><span class="number" aria-hidden="true">00</span>Home</a></li>
+          <li><a href="destination.html" title="Destination"><span class="number" aria-hidden="true">01</span>Destination</a></li>
+          <li><a href="#" title="Crew"><span class="number" aria-hidden="true">02</span>Crew</a></li>
+          <li><a href="#" title="Technology"><span class="number" aria-hidden="true">03</span>Technology</a></li> 
         </ul>
       </nav>
     </div>
   </div>
   </div>
   </header>
-  <main>
+  <main id="main">
     <div class="left-side">
     <h1>So, you want to travel to <span class="space">Space</span></h1>
     <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
