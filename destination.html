@@ -36,30 +36,36 @@
   </div>
   </div>
   </header>
-  <main id="main">
+  <main id="main" class="main-destination">
+    <div class="pic-side">
     <h1 class="first-paragraph-dest"><span class="number-title" aria-hidden="true">01</span> pick your destination</h1>
     <img src="assets/destination/image-moon.png" alt="the moon" class="planet-image" />
+    </div>
+    <div class="explanation-side">
     <div class="tab-list">
-      <button aria-selected="true" class="tab-list-btn">Moon</button>
-      <button aria-selected="true" class="tab-list-btn">Mars</button>
-      <button aria-selected="true" class="tab-list-btn">Europa</button>
-      <button aria-selected="true" class="tab-list-btn">Titan</button>
+      <button aria-selected="true" class="tab-list-btn active">Moon</button>
+      <button aria-selected="false" class="tab-list-btn">Mars</button>
+      <button aria-selected="false" class="tab-list-btn">Europa</button>
+      <button aria-selected="false" class="tab-list-btn">Titan</button>
     </div>
     <article>
-      <h2>Moon</h2>
-      <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+      <h2 id="planetName">Moon</h2>
+      <p id="description">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
         regain perspective and come back refreshed. While you’re there, take in some history
          by visiting the Luna 2 and Apollo 11 landing sites.</p>
          <hr aria-hidden="true"/>
+         <div class="distance-part">
         <div>
          <h3>Avg. distance</h3>
-         <p class="distance">384,400 km</p>
+         <p class="distance" id="distance">384,400 km</p>
         </div>
         <div>
          <h3>Est. travel time</h3>
-         <p class="distance">3 days</p>
+         <p class="distance" id="travel">3 days</p>
+        </div>
         </div>
     </article>
+    </div>
     </div>
     <script src="main.js"></script>
     </body>

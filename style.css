@@ -174,8 +174,10 @@ ul li:focus,
    border-color: hsl(var(--white-color) / .4);
 }
 
-ul li.active {
+ul li.active,
+.tab-list > [aria-selected="true"] {
     border-color: hsl(var(--white-color) / 1);
+    color: hsl(var(--white-color) / 1);
 }
 
 
@@ -366,7 +368,7 @@ p {
         position: static;
         background: none;
         width: auto;
-        padding-inline: 4rem;
+        padding-inline: 6rem;
 
     }
 
@@ -421,8 +423,12 @@ p {
 }
 
 
+
 .number-title {
-    color: hsl(var(--dark-color) / 0.1);
+    font-weight: 700;
+    margin-right: 0.938rem;
+    color: hsl(var(--white-color) / .25);
+    font-size: 1.2rem;
 }
 
 
@@ -430,7 +436,7 @@ p {
    color: hsl(var(--white-color));
    font-family: var(--ff-sans-cond);
    text-transform: uppercase;
-   letter-spacing: 4px;
+   letter-spacing: 4.72px;
    font-size: 1.1rem;
    font-weight: 400;
 }
@@ -451,13 +457,18 @@ h2 {
     text-transform: uppercase;
 }
 
+.tab-list {
+    margin-left: 20px;
+}
+
 .tab-list-btn {
-    color: aliceblue;
+    color: hsl(var(--light-color));
     text-transform: uppercase;
-    border-bottom: 4px solid hsl(var(--white-color) / 0);
+    border-bottom: 3px solid hsl(var(--white-color) / 0);
     margin: 1rem 20px 1rem 0;
     font-family: var(--ff-sans-cond);
     letter-spacing: 2px;
+    padding-bottom: 10px;
 }
 
 
@@ -488,4 +499,52 @@ h3 {
 
 /*destination desktop style*/
 
+@media only screen and (min-width: 80rem) {
+
+    .destination {
+        background-image: url(assets/destination/background-destination-desktop.jpg);
+    }
+
+    .planet-image {
+        width: 450px;
+        height: 450px;
+        margin-top: 3rem;
+    }
+
+    .first-paragraph-dest {
+        margin-left: 7rem;
+        font-size: 1.4rem;
+    }
+
+    .number-title {
+        font-size: 1.4rem;
+    }
+
+    .main-destination {
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    .distance-part {
+        display: flex;
+    }
+
+    .explanation-side {
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .tab-list {
+        margin-left: 0;
+    }
+
+    h2 {
+        font-size: 6rem;
+    }
+
+    article p {
+        margin-right: 4rem;
+    }
+
+}
 
