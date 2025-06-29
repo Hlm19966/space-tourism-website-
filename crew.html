@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space tourism website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="whole-body crew">
+  <div class="container">
+    <a class="skip-to-content"  href="#main">Skip to content</a>
+    <header>
+    <div class="navigation flex">
+      <div class="left-sidebar">
+        <img src="assets/shared/logo.svg" alt="star logo" class="logo"/>
+      </div>
+      <hr class="divider-line sr-only" aria-hidden="true" />
+      <div class="right-sidebar">
+        <button aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Menu</span>
+          <img src="assets/shared/icon-hamburger.svg" alt="icon hamburger" class="icon-hamburger" >
+        </button>
+      </div>
+    <div class="mobile-menu" role="dialog" aria-live="polite" id="mobileMenu">
+      <div class="mobile-menu-inner">
+      <img src="assets/shared/icon-close.svg" alt="Close icon" class="close-icon" aria-label="Close Menu" />
+      <nav>
+        <ul>
+          <li><a href="index.html" title="Home" ><span class="number" aria-hidden="true">00</span>Home</a></li>
+          <li><a href="destination.html" title="Destination"><span class="number" aria-hidden="true">01</span>Destination</a></li>
+          <li class="active"><a href="crew.html" title="Crew"><span class="number" aria-hidden="true">02</span>Crew</a></li>
+          <li><a href="#" title="Technology"><span class="number" aria-hidden="true">03</span>Technology</a></li> 
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </div>
+  </header>
+  <main id="main" class="main-crew">
+    <div class="content-section">
+    <h1 class="first-paragraph-dest first-paragraph-crew"><span class="number-title" aria-hidden="true">02</span> meet your crew</h1>
+   <article>
+    <div class="crew-position">Commander</div>
+    <h2 class="crew-name">Douglas Hurley</h2>
+    <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. 
+    He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+   </article> 
+   <div class="dot-indicators" style="text-align: center;">
+      <button aria-selected="true" class="dot-indicators-btn"><span class="sr-only">The commander</span></button>
+      <button aria-selected="false" class="dot-indicators-btn"><span class="sr-only">The mission specialist</span></button>
+      <button aria-selected="false" class="dot-indicators-btn"><span class="sr-only">The poilet</span></button>
+      <button aria-selected="false" class="dot-indicators-btn"><span class="sr-only">The crew engineer</span></button>
+    </div>
+   </div>
+   <div class="img-section">
+    <img src="assets/crew/image-douglas-hurley.png" alt="Douglas hurley- commander of crew" class="crew-img" />
+   </div>
+  </main>
+  </div>
+    <script src="main.js"></script>
+    </body>
+    </html>
