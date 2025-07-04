@@ -29,7 +29,7 @@
           <li><a href="index.html" title="Home" ><span class="number" aria-hidden="true">00</span>Home</a></li>
           <li class="active"><a href="destination.html" title="Destination"><span class="number" aria-hidden="true">01</span>Destination</a></li>
           <li><a href="crew.html" title="Crew"><span class="number" aria-hidden="true">02</span>Crew</a></li>
-          <li><a href="Technology.html" title="Technology"><span class="number" aria-hidden="true">03</span>Technology</a></li> 
+          <li><a href="technology.html" title="Technology"><span class="number" aria-hidden="true">03</span>Technology</a></li> 
         </ul>
       </nav>
     </div>
@@ -42,13 +42,13 @@
     <img src="assets/destination/image-moon.png" alt="the moon" class="planet-image" />
     </div>
     <div class="explanation-side">
-    <div class="tab-list">
-      <button aria-selected="true" class="tab-list-btn active">Moon</button>
-      <button aria-selected="false" class="tab-list-btn">Mars</button>
-      <button aria-selected="false" class="tab-list-btn">Europa</button>
-      <button aria-selected="false" class="tab-list-btn">Titan</button>
+    <div class="tab-list" role="tab-list" aria-label="Destination list">
+      <button aria-selected="true"  role="tab" tabindex="0" aria-controls="moon-tab" class="tab-list-btn active">Moon</button>
+      <button aria-selected="false" role="tab" tabindex="-1" aria-controls="mars-tab" class="tab-list-btn">Mars</button>
+      <button aria-selected="false" role="tab" tabindex="-1" aria-controls="Europa-tab" class="tab-list-btn">Europa</button>
+      <button aria-selected="false" role="tab" tabindex="-1" aria-controls="titan-tab" class="tab-list-btn">Titan</button>
     </div>
-    <article>
+    <article id="moon-tab">
       <h2 id="planetName">Moon</h2>
       <p id="description">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
         regain perspective and come back refreshed. While you’re there, take in some history
@@ -69,6 +69,7 @@
     </div>
   </main>
     <script src="main.js"></script>
+    <script src="tab.js"></script>
     </body>
     </html>
   
