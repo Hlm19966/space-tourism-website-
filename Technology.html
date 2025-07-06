@@ -41,15 +41,15 @@
     <h1 class="first-paragraph-dest first-paragraph-crew"><span class="number-title number-title-crew" aria-hidden="true">03</span> space launch 101</h1>
     <div class="image-wrapper">
       <picture>
-       <source srcset="assets/technology/image-launch-vehicle-portrait.jpg" media="(min-width:59.25rem)">
-       <img src="assets/technology/image-launch-vehicle-landscape.jpg" class="launch-vehicle" alt="launch-vehicle-image" />
+       <source srcset="assets/technology/image-launch-vehicle-portrait.jpg" media="(min-width:59.25rem)" id="techImagePortrait">
+       <img src="assets/technology/image-launch-vehicle-landscape.jpg" class="launch-vehicle" alt="launch-vehicle-image"  id="techImageLandscape"/>
       </picture>
     </div>
     
-     <div class="dot-indicators number-btn-list">
-      <button aria-selected="true" class="number-btn">1</button>
-      <button aria-selected="false" class="number-btn">2</button>
-      <button aria-selected="false" class="number-btn">3</button>
+     <div class="dot-indicators number-btn-list" role="tablist" aria-label="technology list">
+      <button aria-selected="true"  role="tab" tabindex="0" class="number-btn">1</button>
+      <button aria-selected="false" role="tab" tabindex="-1" class="number-btn">2</button>
+      <button aria-selected="false" role="tab" tabindex="-1" class="number-btn">3</button>
     </div>
      <article class="crew-article">
       <div class="terminology">the terminology...</div>
@@ -61,5 +61,6 @@
     </main>
     </div>
     <script src="main.js"></script>
+    <script src="tab.js"></script>
     </body>
     </html>

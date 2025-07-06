@@ -42,14 +42,14 @@
    <article>
     <div class="crew-position">Commander</div>
     <h2 class="crew-name">Douglas Hurley</h2>
-    <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. 
+    <p id="crewBio">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. 
     He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
-   </article> 
-   <div class="dot-indicators">
-      <button aria-selected="true" class="dot-indicators-btn"><span class="sr-only">The commander</span></button>
-      <button aria-selected="false" class="dot-indicators-btn"><span class="sr-only">The mission specialist</span></button>
-      <button aria-selected="false" class="dot-indicators-btn"><span class="sr-only">The poilet</span></button>
-      <button aria-selected="false" class="dot-indicators-btn"><span class="sr-only">The crew engineer</span></button>
+   </article>  
+   <div class="dot-indicators" role="tablist" aria-label="crew List">
+      <button aria-selected="true"  role="tab" tabindex="0" class="dot-indicators-btn"><span class="sr-only">The commander</span></button>
+      <button aria-selected="false" role="tab" tabindex="-1" class="dot-indicators-btn"><span class="sr-only">The mission specialist</span></button>
+      <button aria-selected="false" role="tab" tabindex="-1" class="dot-indicators-btn"><span class="sr-only">The poilet</span></button>
+      <button aria-selected="false" role="tab" tabindex="-1" class="dot-indicators-btn"><span class="sr-only">The crew engineer</span></button>
     </div>
    </div>
    <div class="img-section">
@@ -58,5 +58,6 @@
   </main>
   </div>
     <script src="main.js"></script>
+    <script src="tab.js"></script>
     </body>
     </html>
