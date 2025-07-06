@@ -10,11 +10,12 @@ const travel = document.getElementById("travel");
 const planetImage = document.querySelector(".planet-image");
 const dotButton = document.querySelectorAll(".dot-indicators-btn");
 const crewName = document.querySelector(".crew-name");
-const techImageLandscape = document.getElementById("techImageLandscape");
-const techImagePortrait = document.getElementById("techImagePortrait");
+const crewImage = document.querySelector(".crew-img");
 const crewRole = document.querySelector(".crew-position");
 const crewBio = document.getElementById("crewBio");
 const numberBtnList = document.querySelectorAll(".number-btn");
+const techImageLandscape = document.getElementById("techImageLandscape");
+const techImagePortrait = document.getElementById("techImagePortrait");
 const technologyDescription = document.querySelector(".tec-paragraph");
 const technologyName = document.querySelector(".technology-name");
 
